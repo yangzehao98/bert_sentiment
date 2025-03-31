@@ -22,6 +22,11 @@ It reduces the number of layers, making it ideal for scenarios where latency and
 
 I chose to use DistilBERT over the original BERT model primarily due to practical constraints and the nature of this project. This was a personal project that I developed independently over a short period of time, without access to high-performance computing resources like GPUs. I ran all training and inference on my local CPU, and using the full BERT model would have been computationally too expensive and time-consuming.
 
+This project is structured as a **modular Python package**. You can run the entire training and evaluation pipeline with a single command:
+
+```bash
+python main.py
+
 ---
 
 ## Project Overview
