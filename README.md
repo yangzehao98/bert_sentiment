@@ -128,7 +128,7 @@ To further boost performance, especially for rare emotions, I would apply:
    - Data augmentation: Paraphrasing or back-translation to synthetically increase diversity of minority emotion expressions.
 
 4. Model Alternatives
-Consider using bert-base-uncased or roberta-base when GPU is available to capture deeper semantic representations.
+Consider using **bert-base-uncased** or **roberta-base** when GPU is available to capture deeper semantic representations.
 
 
 This emotion classification model can be adapted to analyze financial news, social media streams, or analyst commentary 
