@@ -102,7 +102,7 @@ It setups prioritizes feasibility over completeness, which naturally limits mode
 Secondly, the recall rate is very small for rare emotions, meaning the model rarely identifies these emotions correctly. 
 Besides, there is class imbalance in the original dataset.
 
-Despite hardware limitations and a small training subset, the model achieved strong results on major emotion categories. Accoring to Google GoEmotions official report, the BERT-based model achieves an average F1-score of .46 across their proposed taxonomy. 
+Despite hardware limitations and a small training subset, the model achieved strong results on major emotion categories. Accoring to Google GoEmotions official report, the BERT-based model achieves an average F1-score of .46 across their proposed taxonomy based on the whole three available data set. 
 With access to more data and compute, I am confident that performance—especially on rare emotion classes—can be significantly improved through proper fine-tuning, threshold calibration, and training on the full dataset.
 
 
