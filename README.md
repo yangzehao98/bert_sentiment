@@ -26,7 +26,7 @@ This project is structured as a **modular Python package**. You can run the enti
 
 ```bash
 python main.py
-
+```
 ---
 
 ## Project Overview
