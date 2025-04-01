@@ -93,7 +93,7 @@ The model performs relatively well on frequent or strongly expressed emotions, s
 
 These results indicate that the model is capable of learning and detecting clear and commonly occurring emotional signals in text. 
 However, the model struggles significantly on rare or subtle emotions, such as **grief**, **nervousness**, **realization**, and **pride**,
-with F1-scores near or equal to 0.00–0.10. There are several reasons that can explain this. 
+with F1-scores near or equal to 0.10–0.20. There are several reasons that can explain this. 
 
 Firstly, training data size for such categories is small. 
 This project was built on limited hardware (CPU only), without access to a GPU. Due to computational constraints, I used only 20% of one of the three available GoEmotions CSVs, resulting in ~4,225 training samples. (Epochs: 3, Batch Size: 8)
