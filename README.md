@@ -85,11 +85,11 @@ Below is the full classification report after training for 3 epochs:
 
 The model performs relatively well on frequent or strongly expressed emotions, such as:
 
-- **gratitude**: F1 = 0.77 (Precision: 0.84, Recall: 0.75)
+- **gratitude**: F1 = 0.81 (Precision: 0.89, Recall: 0.75)
 
 - **love**: F1 = 0.62
 
-- **amusement** and **admiration**: F1 ≈ 0.53–0.54
+- **amusement** and **admiration**: F1 ≈ 0.56–0.58
 
 These results indicate that the model is capable of learning and detecting clear and commonly occurring emotional signals in text. 
 However, the model struggles significantly on rare or subtle emotions, such as **grief**, **nervousness**, **realization**, and **pride**,
@@ -126,6 +126,7 @@ To further boost performance, especially for rare emotions, I would apply:
    - Threshold tuning: Adjusting decision thresholds per label based on validation F1 or precision-recall tradeoffs. 
    - Gradient accumulation: to simulate larger batch sizes on CPU without exceeding memory. 
    - Data augmentation: Paraphrasing or back-translation to synthetically increase diversity of minority emotion expressions.
+   - Additionally, hyperparameter tuning (learning rate, number of epochs, batch size, tokenizer max length) can be performed using grid search. Due to computational constraints, the grid search logic has been modularized and included in `demo.py` for future experimentation.
 
 4. Model Alternatives
 Consider using **bert-base-uncased** or **roberta-base** when GPU is available to capture deeper semantic representations.
